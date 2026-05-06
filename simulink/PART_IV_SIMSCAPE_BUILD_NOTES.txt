@@ -1,0 +1,19 @@
+PART IV SIMSCAPE BUILD NOTES
+============================
+Build the actual RLC circuit in Simscape Electrical using:
+- Pulse Voltage Source (or Controlled Voltage Source)
+- Inductor: 9 H
+- Capacitor: 800 uF to ground at the middle node
+- Inductor: 3 H
+- Resistor: 100 ohms to ground
+- Electrical Reference
+- Solver Configuration
+- Voltage Sensor + PS-Simulink Converter
+- To Workspace blocks
+
+Suggested exported variables:
+- t_sim
+- x_sim
+- y_sim
+
+Then run plot_simscape_export.m to regenerate the Part IV and Part V figures from the real Simscape output.

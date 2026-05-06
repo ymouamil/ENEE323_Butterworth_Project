@@ -1,0 +1,17 @@
+\documentclass[border=10pt]{standalone}
+\usepackage{amsmath}
+\usepackage[american]{circuitikz}
+\begin{document}
+\begin{circuitikz}[line width=0.95pt]
+    \draw (0,0) to[V, l=$x(t)$] (0,3);
+    \draw (0,3) to[L, l=$9\,\text{H}$] (3,3);
+    \draw (3,3) to[L, l=$3\,\text{H}$] (6,3);
+    \draw (3,3) to[C, l_=$800\,\mu\text{F}$] (3,0);
+    \draw (6,3) to[R, l_=$100\,\Omega$, *-*] (6,0);
+    \draw (0,0) -- (6,0);
+    \draw (3,0) node[sground] {};
+    \node at (6.5, 3) {$+$};
+    \node at (6.7, 1.5) {$y(t)$};
+    \node at (6.5, 0) {$-$};
+\end{circuitikz}
+\end{document}
