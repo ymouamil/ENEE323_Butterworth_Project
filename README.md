@@ -1,6 +1,4 @@
-# ENEE323 Project 6 — Fully Fixed Styled Project
-
-This is the fully fixed package. It contains MATLAB code, generated figures, data files, LaTeX report files, and Simscape helper notes.
+# ENEE323 Project 6
 
 ## Folder structure
 
